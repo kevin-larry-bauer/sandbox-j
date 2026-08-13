@@ -1,0 +1,37 @@
+html {
+  background-color: green;
+}
+
+#nest {
+  height: 400px;
+  width: 400px;
+  background-image: url("../img/nest.avif");
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-content:center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dragon-image {
+    height: 230px; 
+}
+
+.egg-image {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.egg-image.water {
+    background-color: blue;
+}
+
+.egg-image.fire {
+    background-color: red;
+}
+
+.egg-image.electric {
+    background-color: rgb(255, 255, 0);
+}
