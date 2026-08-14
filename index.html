@@ -1,23 +1,38 @@
 <html>
-  <head>
-    <script src="js/dragon.js" lang="javascript" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/main.css"> 
-  </head>
-  <body>
-    <h1>Hello Jackie!</h1>
 
-    <div>
-      <p>This is an example for Jackie of what a webpage is like!</p>
-      <p>Paragraphs have spaces in between them.</p>
-    </div>
+<head>
+  <script src="js/dragon.js" lang="javascript" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-    <h2>Click on the dragons below to get some eggs!</h2>
+<body>
+  <h1>Hello Jackie!</h1>
 
-    <img class="dragon-image" src="img/Water_Dragon.webp" onClick="dragonClicked('water')" />
-    <img class="dragon-image" src="img/fire_dragon.jpg" onClick="dragonClicked('fire')" /> 
-    <img class="dragon-image" src="img/electric_dragon.jpg" onClick="dragonClicked('electric')" />
-    <div id="nest">
-        <!-- This is where the javascript will put the eggs -->
-    </div>
-  </body>
+  <div>
+    <p>This is an example for Jackie of what a webpage is like!</p>
+    <p>Paragraphs have spaces in between them.</p>
+  </div>
+
+  <div>
+    <button onclick="showHiddenElement('waterDragonImg')">Show Water Dragon</button>
+    <button onclick="showHiddenElement('fireDragonImg')">Show fire Dragon</button>
+    <button onclick="showHiddenElement('electricDragonImg')">Show electric dragon</button>
+  </div>
+  <div>
+    <button onclick="showRandomDragon()">random</button>
+ </div>
+
+  <div>
+    <img id="waterDragonImg" class="dragon-image hidden" src="img/Water_Dragon.webp" onClick="dragonClicked('water')" />
+    <img id="fireDragonImg" class="dragon-image hidden" src="img/fire_dragon.jpg" onClick="dragonClicked('fire')" />
+    <img id="electricDragonImg" class="dragon-image hidden" src="img/electric_dragon.jpg"
+      onClick="dragonClicked('electric')" />
+  </div>
+
+  <div id="nest">
+    <!-- This is where the javascript will put the eggs -->
+  </div>
+</body>
+
 </html>
+<button>

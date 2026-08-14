@@ -18,6 +18,10 @@ html {
     height: 230px; 
 }
 
+.dragon-image.hidden {
+    visibility: hidden;
+}
+
 .egg-image {
     height: 50px;
     width: auto;
@@ -34,4 +38,11 @@ html {
 
 .egg-image.electric {
     background-color: rgb(255, 255, 0);
+}
+
+.test-box {
+    border: solid 1px purple; 
+    width: 200px; 
+    height: 200px; 
+    background-color: white;
 }

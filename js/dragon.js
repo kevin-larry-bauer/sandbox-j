@@ -26,3 +26,17 @@ function dragonClicked(dragonType) {
     }
     console.log('dragon clicked, type was ' + dragonType + ' egg counts are: ', eggCounts)
 }
+
+function hideElement(elementId) {
+    const myElement = document.getElementById(elementId)
+    myElement.classList.add('hidden')
+}
+
+function showHiddenElement(elementId) {
+    const myElement = document.getElementById(elementId)
+    myElement.classList.remove('hidden')
+}
+
+function showRandomDragon() {
+    
+}
